@@ -30,16 +30,16 @@
             <ul class="header-nav list ">
                 <li class="header-nav-home "><a class="header-home link " href="#">Home</a>
                 </li>
-                <li class=" header-nav-about "><a class="header-about link " href="our-service ">About Us</a>
+                <li class=" header-nav-about "><a class="header-about link " href="our-service-index">About Us</a>
                 </li>
                 <li class=" header-nav-service "><a class="header-service link " href="# ">Service</a>
                 </li>
             </ul>
             <div class="header-buttons">
-                <button type="button" class="login-btn js-open-menu" data-menu-open="">
+                <button type="button" class="login-btn js-open-menu" >
                     Log In
                 </button>
-                <button type="button" class="signup-btn js-open-menu" data-menu-open="">
+                <button type="button" class="signup-btn js-open-menu" data-modal-open>
                     Sign Up
                 </button>
             </div>
@@ -59,21 +59,21 @@
                         владельцам автомобилей контролировать и управлять техническим обслуживанием и починкой своих
                         машин.</p>
                     <div class="hero-btns">
-                        <form th:method="GET" th:action="@{/auth/login-user}">
-                            <button type="submit">Я - пользователь</button>
+                        <form th:method="GET" th:action="@{/auth/login-user}"  >
+                            <button type="submit"  data-modal-open-user>Я - пользователь</button>
                         </form>
                         <form th:method="GET" th:action="@{/auth/login-service}">
-                            <button type="submit">Я - сервис</button>
+                            <button type="submit" data-modal-open-serv >Я - сервис</button>
                         </form>
                     </div>
                 </div>
-                <div class="container-right">
+                <div class="container-right" >
                     <img src="./images/hero-img.png" width="746" height="746" alt="hero-img">
                 </div>
             </div>
         </div>
     </section>
-    <section id="our-service" class="our-service">
+    <section id="our-service-index" class="our-service">
         <div class="container">
             <h2 class="title-our-service">Our Service </h2>
             <p class="descr-our-service"> We turn information into actionable insights We work to understand your issues
@@ -185,5 +185,134 @@
         </div>
     </footer>
 </main>
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal-btn-close" data-modal-close>
+x
+        </button>
+        <div class="modal-container ">
+            <p class="modal-title title">Registration User</p>
+            <form class="modal-form">
+                <div class="modal-form-wrap">
+                    <label class="modal-form-label" for="modal-name">Name </label>
+                    <input type="name" name="name"
+                           placeholder=""
+                           required="" class="modal-form-input" id="modal-name">
+                </div>
+                <div class="modal-form-wrap">
+                    <label class="modal-form-label" for="modal-surname">Surname </label>
+                    <input type="surname" name="surname"
+                           placeholder=""
+                           required="" class="modal-form-input" id="modal-surname">
+                </div>
+                <div class="modal-form-wrap">
+                    <label class="modal-form-label" for="modal-login">Login</label>
+                    <input type="login" name="login"
+                           placeholder="" required=""
+                           class="modal-form-input" id="modal-login">
+                </div>
+                <div class="modal-form-wrap">
+                    <label class="modal-form-label" for="modal-email">Email</label>
+                    <input type="email" name="email"
+                           placeholder=""
+                           required="" class="modal-form-input" id="modal-email">
+                </div>
+                <div class="modal-form-wrap">
+                    <label class="modal-form-label" for="modal-password">Password</label>
+                    <input type="password" name="password"
+                           placeholder=""
+                           required="" class="modal-form-input" id="modal-password">
+                </div>
+
+                <div class="modal-form-bottom">
+                    <div class="modal-form-privacy-policy">
+
+                        <label name="user-policy" value="" class="modal-form-privacy-policy-label">
+                            <input type="checkbox" name="user-policy" class="modal-form-checkbox">
+                            <span class="icon-modal"></span>
+                            <span>I accept the terms and conditions of the &nbsp;
+                            <a href="" class="modal-form-privacy-policy-link"> Privacy
+                                Policy</a></span>
+                        </label>
+                    </div>
+                    <button
+                            class="modal-form-btn" type="submit">Send
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="backdrop is-hidden" data-modal-serv>
+    <div class="modal">
+        <button type="button" class="modal-btn-close" data-modal-close-serv>
+            x
+        </button>
+        <div class="modal-container ">
+            <p class="modal-title title">Login Service</p>
+            <form class="modal-form">
+
+                <div class="modal-form-wrap">
+                    <label class="modal-form-label" for="modal-login-serv">Login</label>
+                    <input type="login" name="login"
+                           placeholder="" required=""
+                           class="modal-form-input" id="modal-login-serv">
+                </div>
+                <div class="modal-form-wrap">
+                    <label class="modal-form-label" for="modal-password-serv">Password</label>
+                    <input type="password" name="password"
+                           placeholder=""
+                           required="" class="modal-form-input" id="modal-password-serv">
+                </div>
+
+                <div class="modal-form-bottom">
+                    <button
+                            class="modal-form-btn" type="submit">Найти
+                    </button>
+                    <button
+                            class="modal-form-btn modal-form-btn-1" type="submit">Зарегистрировать Сервис
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="backdrop is-hidden" data-modal-user>
+    <div class="modal">
+        <button type="button" class="modal-btn-close" data-modal-close-user>
+            x
+        </button>
+        <div class="modal-container ">
+            <p class="modal-title title">Login User</p>
+            <form class="modal-form">
+                <div class="modal-form-wrap">
+                    <label class="modal-form-label" for="modal-login-serv">Login</label>
+                    <input type="login" name="login"
+                           placeholder="" required=""
+                           class="modal-form-input" id="modal-login-user">
+                </div>
+                <div class="modal-form-wrap">
+                    <label class="modal-form-label" for="modal-password-serv">Password</label>
+                    <input type="password" name="password"
+                           placeholder=""
+                           required="" class="modal-form-input" id="modal-password-user">
+                </div>
+
+                <div class="modal-form-bottom">
+                    <button
+                            class="modal-form-btn" type="submit">Log In
+                    </button>
+                    <button
+                            class="modal-form-btn modal-form-btn-1" type="submit">Зарегистрировать Сервис
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script type="module" src="./js/modal-1.js"></script>
+<script type="module" src="./js/modal-2.js"></script>
+<script type="module" src="./js/modal-3.js"></script>
 </body>
 </html>
