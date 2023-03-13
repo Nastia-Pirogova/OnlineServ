@@ -36,7 +36,7 @@
                 </li>
             </ul>
             <div class="header-buttons">
-                <a href="login-user.html" target="_blank" type="button" class="login-btn js-open-menu button" >
+                <a href="registration-user.html" target="_blank" type="button" class="login-btn js-open-menu button" >
                     Log In
                 </a>
                 <button type="button" class="signup-btn js-open-menu" data-menu-open="">
@@ -51,33 +51,56 @@
         <div class="container">
             <div class="login-service">
                 <div class="modal-container ">
-                    <p class="modal-title title">Login Service</p>
+                    <p class="modal-title title">Registration Service</p>
                     <form class="modal-form">
-
                         <div class="modal-form-wrap">
-                            <label class="modal-form-label" for="modal-login-serv">Login</label>
-                            <input type="login" name="login"
-                                   placeholder="" required=""
-                                   class="modal-form-input" id="modal-login-serv">
+                            <label class="modal-form-label" for="modal-name">Name </label>
+                            <input type="name" name="name"
+                                   placeholder=""
+                                   required="" class="modal-form-input" id="modal-name">
                         </div>
                         <div class="modal-form-wrap">
-                            <label class="modal-form-label" for="modal-password-serv">Password</label>
+                            <label class="modal-form-label" for="modal-surname">Surname </label>
+                            <input type="surname" name="surname"
+                                   placeholder=""
+                                   required="" class="modal-form-input" id="modal-surname">
+                        </div>
+                        <div class="modal-form-wrap">
+                            <label class="modal-form-label" for="modal-login">Login</label>
+                            <input type="login" name="login"
+                                   placeholder="" required=""
+                                   class="modal-form-input" id="modal-login">
+                        </div>
+                        <div class="modal-form-wrap">
+                            <label class="modal-form-label" for="modal-email">Email</label>
+                            <input type="email" name="email"
+                                   placeholder=""
+                                   required="" class="modal-form-input" id="modal-email">
+                        </div>
+                        <div class="modal-form-wrap">
+                            <label class="modal-form-label" for="modal-password">Password</label>
                             <input type="password" name="password"
                                    placeholder=""
-                                   required="" class="modal-form-input" id="modal-password-serv">
+                                   required="" class="modal-form-input" id="modal-password">
                         </div>
 
                         <div class="modal-form-bottom">
+                            <div class="modal-form-privacy-policy">
+
+                                <label name="user-policy" value="" class="modal-form-privacy-policy-label">
+                                    <input type="checkbox" name="user-policy" class="modal-form-checkbox">
+                                    <span class="icon-modal"></span>
+                                    <span>I accept the terms and conditions of the &nbsp;
+                            <a href="" class="modal-form-privacy-policy-link"> Privacy
+                                Policy</a></span>
+                                </label>
+                            </div>
                             <button
-                                    class="modal-form-btn" type="submit">Найти
+                                    class="modal-form-btn" type="submit">Send
                             </button>
-                            <a href="registration-service.html"
-                               class="modal-form-btn modal-form-btn-1 button" type="submit" target="_blank" >Service Registration
-                            </a>
                         </div>
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
@@ -142,10 +165,10 @@
             </div>
         </div>
     </footer>
-
-    <script type="module" src="./js/modal-1.js"></script>
-    <script type="module" src="./js/modal-2.js"></script>
-    <script type="module" src="./js/modal-3.js"></script>
 </main>
+
+<script type="module" src="./js/modal-1.js"></script>
+<script type="module" src="./js/modal-2.js"></script>
+<script type="module" src="./js/modal-3.js"></script>
 </body>
 </html>

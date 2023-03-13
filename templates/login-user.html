@@ -28,17 +28,17 @@
         </a>
         <div class="header-container-right">
             <ul class="header-nav list ">
-                <li class="header-nav-home "><a class="header-home link " href="#">Home</a>
+                <li class="header-nav-home "><a class="header-home link " href="index.html">Home</a>
                 </li>
-                <li class=" header-nav-about "><a class="header-about link " href=" # ">About Us</a>
+                <li class=" header-nav-about "><a class="header-about link " href="index.html#our-service-index">About Us</a>
                 </li>
-                <li class=" header-nav-service "><a class="header-service link " href="# ">Service</a>
+                <li class=" header-nav-service "><a class="header-service link " href="index.html">Service</a>
                 </li>
             </ul>
             <div class="header-buttons">
-                <button type="button" class="login-btn js-open-menu" data-menu-open="">
+                <a href="login-user.html" target="_blank" type="button" class="login-btn js-open-menu button" >
                     Log In
-                </button>
+                </a>
                 <button type="button" class="signup-btn js-open-menu" data-menu-open="">
                     Sign Up
                 </button>
@@ -54,14 +54,14 @@
                     <p class="modal-title title">Login User</p>
                     <form class="modal-form">
                         <div class="modal-form-wrap">
-                            <label class="modal-form-label" for="modal-login-serv">Login</label>
-                            <input type="login" name="modal-login-serv"
+                            <label class="modal-form-label" for="modal-password-user">Login</label>
+                            <input type="login" name="modal-password-user"
                                    placeholder="" required=""
                                    class="modal-form-input" id="modal-login-user">
                         </div>
                         <div class="modal-form-wrap">
-                            <label class="modal-form-label" for="modal-password-serv">Password</label>
-                            <input type="password" name="modal-password-serv"
+                            <label class="modal-form-label" for="modal-password-user">Password</label>
+                            <input type="password" name="modal-password-user"
                                    placeholder=""
                                    required="" class="modal-form-input" id="modal-password-user">
                         </div>
@@ -70,9 +70,9 @@
                             <button
                                     class="modal-form-btn" type="submit">Log In
                             </button>
-                            <button
-                                    class="modal-form-btn modal-form-btn-1" type="submit">Зарегистрировать Сервис
-                            </button>
+                            <a href="registration-user.html"
+                                    class="modal-form-btn modal-form-btn-1 button" type="submit" target="_blank" >User Registration
+                            </a>
                         </div>
                     </form>
                 </div>
@@ -142,5 +142,9 @@
         </div>
     </footer>
 </main>
+
+<script type="module" src="./js/modal-1.js"></script>
+<script type="module" src="./js/modal-2.js"></script>
+<script type="module" src="./js/modal-3.js"></script>
 </body>
 </html>

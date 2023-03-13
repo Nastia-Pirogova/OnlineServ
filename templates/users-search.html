@@ -15,122 +15,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
-<!--<body>-->
-<!--<header>-->
-<!--    <div class="container header-container">-->
-<!--        <a href="index.html" class="header-logo">-->
-<!--            <div class="logo-header">-->
-<!--                <svg class="icon-logo" width="34.25px" height="34.25px">-->
-<!--                    <use href="./images/icons.svg#icon-logo"></use>-->
-<!--                </svg>-->
-<!--                OnlineServ-->
-<!--            </div>-->
-<!--        </a>-->
-<!--        <div class="header-container-right">-->
-<!--            <ul class="header-nav list ">-->
-<!--                <li class="header-nav-home "><a class="header-home link " href="#">Home</a>-->
-<!--                </li>-->
-<!--                <li class=" header-nav-about "><a class="header-about link " href=" # ">About Us</a>-->
-<!--                </li>-->
-<!--                <li class=" header-nav-service "><a class="header-service link " href="# ">Service</a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--            <div class="header-buttons">-->
-<!--                <button type="button" class="login-btn js-open-menu" data-menu-open="">-->
-<!--                    Log In-->
-<!--                </button>-->
-<!--                <button type="button" class="signup-btn js-open-menu" data-menu-open="">-->
-<!--                    Sign Up-->
-<!--                </button>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</header>-->
-<!--<h1>Search</h1>-->
-<!--<table>-->
-<!--    <thead>-->
-<!--    <tr>-->
-<!--        <th>ID</th>-->
-<!--        <th>Name</th>-->
-<!--        <th>Surname</th>-->
-<!--    </tr>-->
-<!--    </thead>-->
-<!--    <tbody>-->
-<!--    <form th:method="GET" th:action="@{/service-menu/users/search}">-->
-<!--        <input type="text" name="surname" placeholder="Введите фамилию">-->
-<!--        <button type="submit">Найти</button>-->
-<!--    </form>-->
-<!--    <tr th:each="user : ${users}">-->
-<!--        <td th:text="${user.getId()}">id</td>-->
-<!--        <td th:text="${user.name}">name</td>-->
-<!--        <td th:text="${user.surname}">surname</td>-->
-<!--    </tr>-->
-<!--    </tbody>-->
-
-<!--</table>-->
-<!--<footer class="footer">-->
-<!--    <div class="container ">-->
-<!--        <div class="footer-container">-->
-<!--            <div class="logo-header">-->
-<!--                <svg class="icon-logo" width="34.25px" height="34.25px">-->
-<!--                    <use href="./images/icons.svg#icon-logo"></use>-->
-<!--                </svg>-->
-<!--                OnlineServ-->
-<!--            </div>-->
-<!--            <ul class="footer-nav link list ">-->
-<!--                <li class="footer-nav-email footer-nav-li"><a class="footer-email link "    href="mailto:support@onliserv.com ">support@onliserv.com</a>-->
-<!--                </li>-->
-<!--                <li class=" footer-nav-tel footer-nav-li"><a class="footer-tel link " href="tel:+380943833399 ">0943833399</a>-->
-<!--                </li>-->
-<!--                <li class=" footer-nav-geo footer-nav-li"><a class="footer-geo link " href="# ">Dhaka, Bangladesh</a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--            <ul class="footer-soc-list list">-->
-<!--                <li class="footer-soc-item">-->
-<!--                    <a href="https://uk-ua.facebook.com/ " class="footer-soc-link link">-->
-<!--                        <svg class="footer-soc-icon" width="16px" height="16px">-->
-<!--                            <use href="./images/icons.svg#icon-ic-facebook"></use>-->
-<!--                        </svg>-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li class="footer-soc-item">-->
-<!--                    <a href="https://twitter.com/?lang=ru" class="footer-soc-link link">-->
-<!--                        <svg class="footer-soc-icon" width="16px" height="16px">-->
-<!--                            <use href="./images/icons.svg#icon-ic-twitter"></use>-->
-<!--                        </svg>-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li class="footer-soc-item">-->
-<!--                    <a href="https://www.instagram.com/" class="footer-soc-link link">-->
-<!--                        <svg class="footer-soc-icon" width="16px" height="16px">-->
-<!--                            <use href="./images/icons.svg#icon-ic-instagram"></use>-->
-<!--                        </svg>-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li class="footer-soc-item">-->
-<!--                    <a href="https://www.linkedin.com/feed/" class="footer-soc-link link">-->
-<!--                        <svg class="footer-soc-icon" width="16px" height="16px">-->
-<!--                            <use href="./images/icons.svg#icon-ic-pinterset"></use>-->
-<!--                        </svg>-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-
-<!--        <div class="footer-bottom">-->
-<!--            <p> © 2023 OnlineServ. - All rights reserved.</p>-->
-<!--            <ul class="footer-descr">-->
-<!--                <li class="footer-descr-li"><a class="footer-descr-a" href="#">Privacy</a></li>-->
-<!--                <li class="footer-descr-li"><a class="footer-descr-a" href="#">Security</a></li>-->
-<!--                <li class="footer-descr-li"><a class="footer-descr-a" href="#">Terms</a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</footer>-->
-<!--</body>-->
-
-
-
 <body class="body">
 <header>
     <div class="container header-container">
@@ -144,17 +28,17 @@
         </a>
         <div class="header-container-right">
             <ul class="header-nav list ">
-                <li class="header-nav-home "><a class="header-home link " href="#">Home</a>
+                <li class="header-nav-home "><a class="header-home link " href="index.html">Home</a>
                 </li>
-                <li class=" header-nav-about "><a class="header-about link " href=" # ">About Us</a>
+                <li class=" header-nav-about "><a class="header-about link " href="index.html#our-service-index">About Us</a>
                 </li>
-                <li class=" header-nav-service "><a class="header-service link " href="# ">Service</a>
+                <li class=" header-nav-service "><a class="header-service link " href="index.html">Service</a>
                 </li>
             </ul>
             <div class="header-buttons">
-                <button type="button" class="login-btn js-open-menu" data-menu-open="">
+                <a href="login-user.html" target="_blank" type="button" class="login-btn js-open-menu button" >
                     Log In
-                </button>
+                </a>
                 <button type="button" class="signup-btn js-open-menu" data-menu-open="">
                     Sign Up
                 </button>

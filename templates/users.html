@@ -15,40 +15,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
-<!--<body>-->
-
-<!--<h1>Users</h1>-->
-<!--<table>-->
-<!--    <thead>-->
-<!--    <form th:method="GET" th:action="@{/service-menu/users/search}">-->
-<!--        <input type="text" name="surname" placeholder="Введите фамилию">-->
-<!--        <button type="submit">Найти</button>-->
-<!--    </form>-->
-<!--    <tr>-->
-<!--        <th>ID</th>-->
-<!--        <th>Name</th>-->
-<!--        <th>Surname</th>-->
-<!--    </tr>-->
-<!--    </thead>-->
-<!--    <tbody>-->
-
-<!--    <tr th:each="user : ${users}">-->
-<!--        <td th:text="${user.getId()}">id</td>-->
-<!--        <td th:text="${user.name}">name</td>-->
-<!--        <td th:text="${user.surname}">surname</td>-->
-<!--    </tr>-->
-<!--    </tbody>-->
-<!--</table>-->
-<!--<br>-->
-<!--<hr>-->
-<!--<form th:method="GET" th:action="@{/service-menu}">-->
-<!--    <h3>Go back</h3>-->
-<!--    <button type="submit">go to back</button>-->
-<!--</form>-->
-
-<!--</body>-->
-
-
 <body class="body">
 <header>
     <div class="container header-container">
@@ -62,17 +28,17 @@
         </a>
         <div class="header-container-right">
             <ul class="header-nav list ">
-                <li class="header-nav-home "><a class="header-home link " href="#">Home</a>
+                <li class="header-nav-home "><a class="header-home link " href="index.html">Home</a>
                 </li>
-                <li class=" header-nav-about "><a class="header-about link " href=" # ">About Us</a>
+                <li class=" header-nav-about "><a class="header-about link " href="index.html#our-service-index">About Us</a>
                 </li>
-                <li class=" header-nav-service "><a class="header-service link " href="# ">Service</a>
+                <li class=" header-nav-service "><a class="header-service link " href="index.html">Service</a>
                 </li>
             </ul>
             <div class="header-buttons">
-                <button type="button" class="login-btn js-open-menu" data-menu-open="">
+                <a href="login-user.html" target="_blank" type="button" class="login-btn js-open-menu button" >
                     Log In
-                </button>
+                </a>
                 <button type="button" class="signup-btn js-open-menu" data-menu-open="">
                     Sign Up
                 </button>
