@@ -616,3 +616,8 @@ input{
 .modal-form-bottom {
     margin: 32px 0 0 0;
 }
+
+.login-service{
+    width: 360px;
+    margin: 223px auto;
+}
