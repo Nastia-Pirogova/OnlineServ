@@ -1,3 +1,3 @@
 # OnlineServ 
 
-Student project GATI SNAU 
+Student project GAFK SNAU 
